@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($password == $storedPassword) {
             //echo "Login successful!";
 
-            header("Location: another_page.php");
+            header("Location: adminconsolehome.php");
             exit();
 
         } else {

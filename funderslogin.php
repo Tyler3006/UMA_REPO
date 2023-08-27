@@ -7,6 +7,8 @@ Tyler Costa
 27th August 2023
 
 Funders login processing page
+ - processes login
+ - increases login count each time the pin is logged in
 
 ā ē ī ō ū
 Ā, Ē, Ī, Ō, Ū
@@ -45,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
             changeLoginCount($loginPin, $conn);
-            displayContent();
+            loginSuccessRedirect();
 
         } else {
             echo "Incorrect password!";
@@ -81,8 +83,11 @@ function changeLoginCount($loginPin, $conn){
 
 }
 
-function displayContent(){
-    echo "<br><br><br> *** CONTENT GOES HERE ***";
+function loginSuccessRedirect(){
+    
+    header("Location: fundershome.php");
+    exit();
+
 }
 
 $conn->close();

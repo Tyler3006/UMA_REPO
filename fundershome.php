@@ -5,12 +5,8 @@
 Tyler Costa
 27th August 2023
 
-Admin console home page
-- Manage project
-- Manage events
-- Create new admin acc
-- Create new funder acc
-- Generate report
+Funders home page
+- Display of all "confidential" content for funders to view
 
 ā ē ī ō ū
 Ā, Ē, Ī, Ō, Ū
@@ -29,12 +25,12 @@ Admin console home page
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/styles.css">
 
-    <title>Admin Console | United Māori Artists</title>
+    <title>Funders Page | United Māori Artists</title>
 </head>
 
 <body>
 <?php
-    echo "admin page";
+    echo "funders page";
 ?>
 </body>
 </head>
