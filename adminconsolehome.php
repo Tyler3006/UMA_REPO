@@ -33,9 +33,20 @@ Admin console home page
 </head>
 
 <body>
-<?php
+    <a href="">Manage a project</a>
+    <a href="">Manage an event</a>
+    <a href="createnewadmin.php">Create new admin account</a>
+    <a href="">Create new funders account</a>
+    <a href="">Generate a report</a>
+    
+
+    <?php
     echo "admin page";
-?>
+
+    ?>
+
+
+
 </body>
 </head>
 
